@@ -1,5 +1,6 @@
 body {
     font-family: "Poppins", sans-serif;
+    background-color: #3c1b1f;
 }
 header {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
@@ -9,6 +10,7 @@ header {
     background-position: center;
     color: #fcf8f3;
     text-align: center;
+    padding: 200px 0;
 }
 .container {
     max-width: 1400px;
@@ -17,9 +19,9 @@ header {
 header h1 {
     font-weight: 600;
     font-size: 96px;
-    line-height: 1.5;
+    line-height: 1;
     letter-spacing: 2px;
-    margin: 0;
+    margin: 30px 0;
 }
 header h3 {
     font-weight: 400;
@@ -39,5 +41,21 @@ header h3 {
     background: #fcf8f3;
     text-decoration: none;
     color: #854836;
+    padding: 16px 32px;
+    margin-top: 32px;
+    display: inline-block;
+    border-radius: 10px;
 
+}
+
+@media (max-width: 800px) {
+    header {
+        padding: 60px 0;
+    }
+    header h1 {
+        font-size:48px ;
+    }
+    header h2 {
+        font-size: 20px;
+    }
 }
