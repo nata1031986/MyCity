@@ -6,6 +6,7 @@ header {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
      url("images/Ivano-Fr.jpg");
     background-repeat: no-repeat;
+    border-radius: 10px;
     background-size: cover;
     background-position: center;
     color: #fcf8f3;
