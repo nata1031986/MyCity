@@ -24,7 +24,7 @@ header h1 {
     margin: 30px 0;
 }
 header h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: 2px;
@@ -32,7 +32,7 @@ header h3 {
 }
 #discover-link {
      font-weight: 700;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 1.5;
     letter-spacing: 2px;
     text-align: center;
@@ -40,7 +40,7 @@ header h3 {
     margin: 0;
     background: #fcf8f3;
     text-decoration: none;
-    color: #854836;
+    color: #2b3939;
     padding: 16px 32px;
     margin-top: 32px;
     display: inline-block;
