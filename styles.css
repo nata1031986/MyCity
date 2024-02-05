@@ -3,7 +3,7 @@ body {
     background-color:#2b3939;
 }
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
      url("images/Ivano-Fr.jpg");
     background-repeat: no-repeat;
     border-radius: 10px;
@@ -46,7 +46,21 @@ header h3 {
     margin-top: 32px;
     display: inline-block;
     border-radius: 10px;
+transition: background-color 0.3s, transform 0.3s;
+}
 
+
+
+   
+
+
+#discover-link:hover {
+    
+    background-color: #2b3939;;
+    color: #fcf8f3;
+
+   
+    transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
