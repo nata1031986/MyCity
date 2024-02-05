@@ -65,8 +65,8 @@ transition: background-color 0.3s, transform 0.3s;
 
 footer {
     color: #fcf8f3;
-     background-image: linear-gradient(rgba(39,32,68,0.9), rgba(39,32,68,0.9)),
-     url("images/img.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+     url("images/img.png");
      background-repeat: no-repeat ;
      background-size: cover;
      padding: 100px 0;
