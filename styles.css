@@ -32,7 +32,7 @@ header h3 {
     margin: 0;
 }
 
-#discover-link {
+header a {
      font-weight: 700;
     font-size: 25px;
     line-height: 1.5;
@@ -56,11 +56,11 @@ transition: background-color 0.3s, transform 0.3s;
    
 
 
-#discover-link:hover {
+header a:hover {
     
     background-color: #2b3939;;
     color: #fcf8f3;
-
+     font-weight: 700;
    
     transform: scale(1.1);
 }
@@ -112,12 +112,12 @@ section {
     gap: 20px;
  
 }
-@media (max-width: 960px) {
+@media (max-width: 900px) {
     header {
         padding: 60px 0;
     }
-    header h1 {
-        font-size:48px ;
+   header h1 {
+        font-size: 45px ;
     }
     header h2 {
         font-size: 20px;
@@ -125,5 +125,12 @@ section {
     footer p {
        font-size: 15px; 
     }
+    header a {
+        font-weight: 500;
+       font-size: 25px;
+      padding: 12px 24px;
+      display: inline-block;
+    }
+  
 }
 
