@@ -109,7 +109,7 @@ section {
 .grid {
     display: grid;
      grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-gap: 60px;
  
 }
 @media (max-width: 900px) {
