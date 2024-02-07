@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <title>My City</title>
 </head>
 <body>
@@ -13,6 +14,58 @@
     <h3>Discover the Heart of Ukrainian Hospitality</h3>
 <a href="#more">EXPLORE</a>
 </header>
+<main>
+<section class="grid-1">
+<div>
+  <img src="images/img1.jpg" class ="img1" alt="Manyava Skete" style="width: 300px; height: auto;">
+
+</div>
+  <div>
+    <h3>
+Manyava Skete of the Exaltation of the Holy Cross
+    </h3>
+        <p>Manyava Skete of the Exaltation of the Holy Cross is an Orthodox monastery located in the village of Manyava,
+Ivano-Frankivsk Oblast, about 40 km southwest of Ivano-Frankivsk. The monastery was founded by the Orthodox saint Job
+ of Manyava in 1611. In 1785, it was closed by the Austrian government as part of the religious reform of Emperor Joseph II.</p>
+        <p>The architectural complex of monastic buildings is an ensemble of stone and wooden structures enclosed by a high stone 
+    wall with towers and loopholes – a good example of the synthesis of mountainous terrain and fortifications.</p>
+</div>
+</section>
+</main>
+<div class="gallery">
+
+    <ul class="controls">
+        <li class="buttons active" data-filter="all">all</li>
+        <li class="buttons" data-filter="cafe">cafe</li>
+        <li class="buttons" data-filter="chocolate">chocolate</li>
+        <li class="buttons" data-filter="cake">cake</li>
+        <li class="buttons" data-filter="juice">juice</li>
+        <li class="buttons" data-filter="sandwich">sandwich</li>
+    </ul>
+
+    <div class="image-container">
+        <a href="images/img2" class="image cafes">
+            <img src="images/img2.jpg" alt=""></a>
+            <a href="images/img3" class="image cafe">
+            <img src="images/img3.jpg" alt=""></a>
+            <a href="images/img4" class="image cafe">
+            <img src="images/img4.jpg" alt=""></a>
+            <a href="images/img4" class="image cafe">
+            <img src="images/img5.jpg" alt=""></a><a href="images/img5" class="image">
+            <img src="images/img6.jpg" alt=""></a><a href="images/img6" class="image">
+            <img src="images/img7.jpg" alt=""></a><a href="images/img7" class="image">
+            <img src="images/img8.jpg" alt=""></a><a href="images/img8" class="image">
+            <img src="images/img9.jpg" alt=""></a><a href="images/img9" class="image">
+            <img src="images/img10.jpg" alt=""></a><a href="images/img10" class="image">
+            <img src="images/img11.jpg" alt=""></a><a href="images/img11" class="image">
+            <img src="images/img12.jpg" alt=""></a><a href="images/img12" class="image">
+            <img src="images/img13.jpg" alt=""></a><a href="images/img13" class="image">
+            <img src="images/img17.jpg" alt=""></a><a href="images/img17" class="image">
+            <img src="images/img18.jpg" alt=""></a><img src="images/img18.jpg" alt="image"></a>
+    </div>
+        
+    </ul>
+</section>
 <footer>
    <section class="grid">
     <div class="about">
@@ -45,8 +98,48 @@
     target="_blank">open sourced</a>
         </p>
         </div>
-        </section>
+    </div>
 </footer>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- magnific popup js cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+    $('.buttons').click(function(){
+
+        $(this).addClass('active').siblings().removeClass('active');
+
+        var filter = $(this).attr('data-filter')
+
+        if(filter == 'all'){
+            $('.image').show(400);
+        }else{
+            $('.image').not('.'+filter).hide(200);
+            $('.image').filter('.'+filter).show(400);
+        }
+
+    });
+
+    $('.gallery').magnificPopup({
+
+        delegate:'a',
+        type:'image',
+        gallery:{
+            enabled:true
+        }
+
+    });
+
+});
+
+</script>
+
 </body>
 </html>

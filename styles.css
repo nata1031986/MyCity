@@ -17,6 +17,9 @@ header {
     max-width: 1400px;
     margin: 0 auto;
 }
+.img-responsive {
+  max-width: 100%;
+}
 header h1 {
     font-weight: 600;
     font-size: 96px;
@@ -36,7 +39,7 @@ header a {
      font-weight: 700;
     font-size: 25px;
     line-height: 1.5;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
     margin: 0;
@@ -71,8 +74,42 @@ footer {
      url("images/img.png");
      background-repeat: no-repeat ;
      background-size: cover;
-     padding: 100px 0;
+    
      
+}
+main {
+    background-color: #fcf8f3;
+    padding-right: 20px;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity:0.3;
+    text-transform: uppercase;
+}
+main p {
+font-size: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+margin:0;
+}
+.grid-1 {
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+     padding-top: 30px;
+     padding-bottom: 30px;
+     justify-self:center;
+ 
+   
+}
+.img1 {
+    padding-top: 25px;
+   
 }
 footer h4 {
     font-weight: 700;
@@ -105,12 +142,76 @@ footer ul {
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding:100 0;
 }
 .grid {
     display: grid;
      grid-template-columns: repeat(3, 1fr);
     grid-gap: 60px;
  
+}
+
+.gallery {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    transition: all .2s cubic-bezier(0.34, 1.12,.68, 1.31);
+     min-height: 100vh;
+     background:#fbf2d5;
+     padding-bottom: 100px;
+}
+.gallery .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:20px 0;
+    list-style: none;
+}
+
+.gallery .controls .buttons{
+    height:40px;
+    width: 140px;
+    background:#fff;
+    color:#666;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin:20px;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    text-align: center;
+}
+
+.gallery .controls .buttons.active{
+    background:coral;
+    color:#fff;
+}
+
+.gallery .image-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.gallery .image-container .image{
+    height:250px;
+    width: 350px;
+    overflow: hidden;
+    border:15px solid #fff;
+    box-shadow: 0 3px 5px rgba(0,0,0,.3);
+    margin: 20px;
+}
+
+.gallery .image-container .image img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+
+.gallery .image-container .image:hover img{
+    transform: scale(1.4);
 }
 @media (max-width: 900px) {
     header {
