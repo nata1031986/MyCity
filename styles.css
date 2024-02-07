@@ -6,7 +6,7 @@ header {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
      url("images/Ivano-Fr.jpg");
     background-repeat: no-repeat;
-    border-radius: 10px;
+   
     background-size: cover;
     background-position: center;
     color: #fcf8f3;
@@ -22,12 +22,12 @@ header {
 }
 header h1 {
     font-weight: 600;
-    font-size: 96px;
+    font-size: 76px;
     line-height: 1;
     letter-spacing: 2px;
     margin: 30px 0;
 }
-header h3 {
+header h2 {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.5;
@@ -71,7 +71,7 @@ header a:hover {
 footer {
     color: #fcf8f3;
     background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-     url("images/img.png");
+     url("images/Ivano-Fr.jpg");
      background-repeat: no-repeat ;
      background-size: cover;
     
@@ -101,16 +101,22 @@ margin:0;
 .grid-1 {
     display: grid;
      grid-template-columns: 1fr 1fr;
+     grid-gap:30px;
      padding-top: 30px;
-     padding-bottom: 30px;
-     justify-self:center;
+     padding-bottom: 20px;
+     padding-left: 20px;
+     
  
    
 }
-.img1 {
-    padding-top: 25px;
-   
+.img-responsive {
+  max-width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
 }
+
+
 footer h4 {
     font-weight: 700;
     font-size: 20px;
