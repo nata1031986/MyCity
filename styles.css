@@ -1,65 +1,58 @@
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Kanit", sans-serif;
     background-color:#2b3939;
 }
+
+.container {
+   
+     max-width: 1300px; 
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
 header {
     background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
      url("images/Ivano-Fr.jpg");
     background-repeat: no-repeat;
-   
     background-size: cover;
     background-position: center;
     color: #fcf8f3;
     text-align: center;
     padding: 200px 0;
 }
-.container {
-    max-width: 1400px;
-    margin: 0 auto;
-}
-.img-responsive {
-  max-width: 100%;
-  margin-top: 10px;
-}
+
 header h1 {
-    font-weight: 600;
-    font-size: 76px;
-    line-height: 1;
-    letter-spacing: 2px;
-    margin: 30px 0;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 1;
+  margin: 30px 0;
+   letter-spacing: 3px;
 }
+
 header h2 {
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.5;
-    letter-spacing: 2px;
-    margin: 0;
+     letter-spacing: 3px;
+      font-weight: 600;
+      font-size: 40px;
 }
 
 header a {
-     font-weight: 700;
-    font-size: 25px;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: uppercase;
-    margin: 0;
-    background: #fcf8f3;
-    text-decoration: none;
-    color: #2b3939;
-    padding: 16px 32px;
-    margin-top: 32px;
-    display: inline-block;
-    border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #2b3939;
+  padding: 16px 32px;
+  margin-top: 72px;
+  display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #fcf8f3;
+ border-radius: 10px;
+
 transition: background-color 0.3s, transform 0.3s;
-
 }
-
-
-
-   
-
-
 header a:hover {
     
     background-color: #2b3939;;
@@ -69,104 +62,71 @@ header a:hover {
     transform: scale(1.1);
 }
 
-footer {
-    color: #fcf8f3;
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
-     url("images/Ivano-Fr.jpg");
-     background-repeat: no-repeat ;
-     background-size: cover;
-    
-     
-}
 main {
-    background-color: #fcf8f3;
-    padding-right: 20px;
+  background-color: #fcf8f3;
 }
 
+
+
 main h3 {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 5px;
-    color: #272044;
-    opacity:0.3;
-    text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+
 }
-main p {
-font-size: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-margin:0;
-}
-.grid-1 {
-    display: grid;
-     grid-template-columns: 1fr 1fr;
-     grid-gap:30px;
-     padding-top: 30px;
-     padding-bottom: 20px;
-     padding-left: 20px;
-     
- 
-   
-}
-.img-responsive {
-  max-width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+main h6 {
+
+  font-style: italic; 
+  opacity: 0.5; 
   
 }
 
 
-footer h4 {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-}
-footer p {
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    margin-right: 20px;
-    opacity: 0.7;
-}
-footer li {
-    list-style: none;
-    margin:0;
-    padding:0;
 
-}
-footer a {
-    color: #fcf8f3;
-    opacity:0.7;
-}
-
-footer ul {
-    padding:0;
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #272044;
+  opacity: 0.7;
 }
 
 
-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding:100 0;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+
 }
-.grid {
-    display: grid;
-     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 60px;
- 
+
+.image-store img {
+    max-width: 80%;
+    height: auto;
+}
+
+.image-store, .text-container {
+    flex: 1;
+    padding: 10px;
+}
+
+
+.image-store {
+    max-width: 80%; 
 }
 
 .gallery {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-transform: capitalize;
+  text-transform: capitalize;
     transition: all .2s cubic-bezier(0.34, 1.12,.68, 1.31);
-     min-height: 100vh;
+
      background:#fbf2d5;
      padding-bottom: 100px;
+      display: flex;
+      flex-wrap: wrap;
 }
 .gallery .controls{
     display: flex;
@@ -220,6 +180,50 @@ section {
 .gallery .image-container .image:hover img{
     transform: scale(1.4);
 }
+footer {
+  color: #fcf8f3;
+  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+     url("images/img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 24px;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: white;
+  opacity: 0.7;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    padding: 50px 30px 30px 30px;
+    
+    
+}
+
 @media (max-width: 900px) {
     header {
         padding: 60px 0;
@@ -230,15 +234,34 @@ section {
     header h2 {
         font-size: 20px;
     }
+    main h3 {
+        font-size: 18px;
+    }
+    main h6 {
+        font-size: 12px;
+    }
     footer p {
        font-size: 15px; 
     }
+  
     header a {
         font-weight: 500;
        font-size: 25px;
       padding: 12px 24px;
       display: inline-block;
     }
-  
-}
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
+  }
+  .image-container, .text-container {
+        flex: 100%;
+        max-width: 100%; 
+    }
 
+    .image-container {
+        max-width: 100%; 
+    }
+}

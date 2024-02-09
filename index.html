@@ -2,8 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Protest+Revolution&display=swap" rel="stylesheet">
+
     <title>My City</title>
 </head>
 <body>
@@ -14,56 +22,58 @@
         <h2>Travel Around Ukraine</h2>
         <a href="#more">Explore</a>
       </header>
-      <main>
-        <section class="grid-1">
-          <div>
+  <main>
+        <section class="grid-container">
+          <div class="row">
+            <div class="image-store ">
             <img
               src="images/imgM.jpg"
               alt="Manyava-skyt"
               class="img-responsive"
             />
           </div>
-          <div>
-      
-            <h3>Places of Power</h3>
+    <div class="text-container">
+          <h3>Manyava Skyt</h3>
+          <h6>Place of power</h6>
             <p>
-              
+                          
 Manyava Skete, located in Ukraine's Carpathian Mountains, 
 is a historic Orthodox monastery founded in 1611.
  Known as the "Ukrainian Athos," it's famed for its spiritual 
  tranquility and ancient architecture, including the Church of 
  the Exaltation of the Holy Cross. The monastery also features
   a holy well, believed to have healing properties. 
- 
             </p>
-           
+            </div>
           </div>
-           <div>
-      
-            <h3>Places of Power</h3>
+            <div class="row">
+                <div class="image-store">
+                    <img
+              src="images/nesamovyte.jpg"
+              alt="nesamovyte"
+              class="img-responsive"
+            /></div>
+              <div class="text-container">
+                <h3>Nesamovyte Lake</h3>
+          <h6>Place of power</h6>
             <p>
-              
+                          
 Spanning about 3 hectares in size and reaching depths of up to 1.5 
 meters, Nesamovyte Lake is steeped in legend and folklore.
  One of the most popular legends tells of a giant who, upon being 
  deceived by his bride, cried tears that filled the lake. Locals and
   visitors alike are captivated by such tales, adding a mystical 
   aura to the lake's natural beauty.
- 
             </p>
-           
-          </div>
-           <div>
-            <img
-              src="images/nesamovyte.jpg"
-              alt="nesamovyte"
-              class="img-responsive"
-            />
-          </div>
-      
-      </main>
+        </div>
+            </div>
+            </div>
+       
+        </section>
+  
+      <section>
 <div class="gallery">
-<div>
+
     <ul class="controls">
         <li class="buttons active" data-filter="all">All</li>
         <li class="buttons" data-filter="cafes">Cafes</li>
@@ -72,7 +82,7 @@ meters, Nesamovyte Lake is steeped in legend and folklore.
         <li class="buttons" data-filter="attractions">Attractions</li>
         <li class="buttons" data-filter="leisures">Leasure</li>
     </ul>
-</div>
+
     <div class="image-container">
      <a href="images/img2.jpg" class="image cafes">
             <img src="images/img2.jpg" alt="">
@@ -123,15 +133,16 @@ meters, Nesamovyte Lake is steeped in legend and folklore.
         <a href="images/img14.jpg" class="image leisures">
             <img src="images/img14.jpg" alt="">
         </a>
-     
+     </ul>
 
-    
-        
-    </ul>
+   </div>
+   </div>
+        </section>
+    </main>
 </div>
-</section>
+
 <footer>
-   <section class="grid">
+    <section class="grid grid-3-columns-with-first-narrow">
     <div class="about">
     <h4>More about the city</h4>
     <ul>
@@ -150,13 +161,13 @@ meters, Nesamovyte Lake is steeped in legend and folklore.
             Public Transport Map</a></li>
     </ul>
     </div>
-    <div class="short">
+    <div class="short" id="shortHistory">
         <h4>Short history</h4>
-        <p>Ivano-Frankivsk is a city in western Ukraine. It got its name from two famous Ukrainians, Ivan Franko and Yuriy Fedkovych. The city has a long history, starting in the 17th century. Over the years, it belonged to different countries and empires.</p>
+        <p>Ivano-Frankivsk is a city in western Ukraine. It got its name from two famous Ukrainians, Ivan Franko and Yuriy Fedkovych. The city has a long history, starting in the 17th century.</p>
     </div>
     <div class="short">
         <h4>About this website</h4>
-        <p>Welcome to Ivano-Frankivsk, where history meets modern charm. Explore ancient landmarks, savor local flavors, and embrace the warmth of its friendly locals. From cultural riches to scenic delights, our city is a traveler's paradise waiting to be discovered.
+        <p>Welcome to Ivano-Frankivsk, where history meets modern charm. From cultural riches to scenic delights, our city is a traveler's paradise waiting to be discovered.
     <br/> It was made by Tasha
     <a href="https://github.com/nata1031986/MyCity"
     target="_blank">open sourced</a>
@@ -164,13 +175,14 @@ meters, Nesamovyte Lake is steeped in legend and folklore.
         </div>
     </div>
 </div>
+</section>
 </footer>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<!-- magnific popup js cdn link  -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
 <script>
