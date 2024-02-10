@@ -300,7 +300,14 @@ footer a {
   opacity: 0.7;
 }
 
-
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 60px;
+    padding: 50px 30px 30px 30px;
+    
+    
+}
 
 .row {
     display: flex;
